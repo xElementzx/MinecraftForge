@@ -491,6 +491,11 @@ project(':forge') {
         jar = tasks.getByName('createJoinedSRG').output
         output = rootProject.file('src/main/resources/coremods/field_to_instanceof.json')
         fields {
+            book {
+                cls = 'net/minecraft/item/Items'
+                name = 'field_151122_aG'
+                replacement = 'net/minecraft/item/BookItem'
+            }
             bows {
                 cls = 'net/minecraft/item/Items'
                 name = 'field_151031_f'
@@ -500,6 +505,11 @@ project(':forge') {
                 cls = 'net/minecraft/item/Items'
                 name = 'field_222114_py'
                 replacement = 'net/minecraft/item/CrossbowItem'
+            }
+            enchanted_book {
+                cls = 'net/minecraft/item/Items'
+                name = 'field_151134_bR'
+                replacement = 'net/minecraft/item/EnchantedBookItem'
             }
             filled_map {
                 cls = 'net/minecraft/item/Items'

@@ -1,0 +1,12 @@
+--- a/net/minecraft/item/EnchantedBookItem.java
++++ b/net/minecraft/item/EnchantedBookItem.java
+@@ -91,4 +_,9 @@
+       }
+ 
+    }
++
++   public ItemStack createUnenchantedBook(ItemStack stack) {
++      return new ItemStack(Items.field_151122_aG);
++   }
++
+ }

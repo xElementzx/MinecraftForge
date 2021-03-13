@@ -76,3 +76,12 @@
                 }
  
                 for(int j1 = 0; j1 < 3; ++j1) {
+@@ -172,7 +_,7 @@
+                p_75140_1_.func_192024_a(itemstack, i);
+                boolean flag = itemstack.func_77973_b() == Items.field_151122_aG;
+                if (flag) {
+-                  itemstack2 = new ItemStack(Items.field_151134_bR);
++                  itemstack2 = ((net.minecraft.item.BookItem) itemstack2.func_77973_b()).createEnchantedBook(itemstack2);
+                   CompoundNBT compoundnbt = itemstack.func_77978_p();
+                   if (compoundnbt != null) {
+                      itemstack2.func_77982_d(compoundnbt.func_74737_b());

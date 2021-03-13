@@ -19,3 +19,12 @@
                 if (!ItemStack.func_77989_b(itemstack, itemstack1)) {
                    this.field_217013_c.func_70299_a(0, ItemStack.field_190927_a);
                    this.func_75142_b();
+@@ -198,7 +_,7 @@
+       EnchantmentHelper.func_82782_a(map, itemstack);
+       itemstack.func_82841_c(0);
+       if (itemstack.func_77973_b() == Items.field_151134_bR && map.size() == 0) {
+-         itemstack = new ItemStack(Items.field_151122_aG);
++         itemstack = ((net.minecraft.item.EnchantedBookItem) itemstack.func_77973_b()).createUnenchantedBook(itemstack);
+          if (p_217007_1_.func_82837_s()) {
+             itemstack.func_200302_a(p_217007_1_.func_200301_q());
+          }

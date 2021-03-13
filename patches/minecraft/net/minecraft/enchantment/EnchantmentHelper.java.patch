@@ -9,6 +9,15 @@
        if (i <= 0) {
           return 0;
        } else {
+@@ -295,7 +_,7 @@
+       List<EnchantmentData> list = func_77513_b(p_77504_0_, p_77504_1_, p_77504_2_, p_77504_3_);
+       boolean flag = p_77504_1_.func_77973_b() == Items.field_151122_aG;
+       if (flag) {
+-         p_77504_1_ = new ItemStack(Items.field_151134_bR);
++         p_77504_1_ = ((net.minecraft.item.BookItem) p_77504_1_.func_77973_b()).createEnchantedBook(p_77504_1_);
+       }
+ 
+       for(EnchantmentData enchantmentdata : list) {
 @@ -312,7 +_,7 @@
     public static List<EnchantmentData> func_77513_b(Random p_77513_0_, ItemStack p_77513_1_, int p_77513_2_, boolean p_77513_3_) {
        List<EnchantmentData> list = Lists.newArrayList();

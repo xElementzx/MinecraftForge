@@ -1,0 +1,11 @@
+--- a/net/minecraft/loot/functions/EnchantRandomly.java
++++ b/net/minecraft/loot/functions/EnchantRandomly.java
+@@ -68,7 +_,7 @@
+    private static ItemStack func_237420_a_(ItemStack p_237420_0_, Enchantment p_237420_1_, Random p_237420_2_) {
+       int i = MathHelper.func_76136_a(p_237420_2_, p_237420_1_.func_77319_d(), p_237420_1_.func_77325_b());
+       if (p_237420_0_.func_77973_b() == Items.field_151122_aG) {
+-         p_237420_0_ = new ItemStack(Items.field_151134_bR);
++         p_237420_0_ = ((net.minecraft.item.BookItem) p_237420_0_.func_77973_b()).createEnchantedBook(p_237420_0_);
+          EnchantedBookItem.func_92115_a(p_237420_0_, new EnchantmentData(p_237420_1_, i));
+       } else {
+          p_237420_0_.func_77966_a(p_237420_1_, i);

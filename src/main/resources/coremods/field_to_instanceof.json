@@ -1,4 +1,41 @@
 {
+    "book": {
+        "cls": "net/minecraft/item/Items",
+        "name": "field_151122_aG",
+        "replacement": "net/minecraft/item/BookItem",
+        "targets": [
+            {
+                "owner": "net/minecraft/enchantment/EnchantmentHelper",
+                "name": "func_185291_a",
+                "desc": "(ILnet/minecraft/item/ItemStack;Z)Ljava/util/List;"
+            },
+            {
+                "owner": "net/minecraft/enchantment/EnchantmentHelper",
+                "name": "func_77504_a",
+                "desc": "(Ljava/util/Random;Lnet/minecraft/item/ItemStack;IZ)Lnet/minecraft/item/ItemStack;"
+            },
+            {
+                "owner": "net/minecraft/inventory/container/EnchantmentContainer",
+                "name": "func_178148_a",
+                "desc": "(Lnet/minecraft/item/ItemStack;II)Ljava/util/List;"
+            },
+            {
+                "owner": "net/minecraft/inventory/container/EnchantmentContainer",
+                "name": "func_217003_a",
+                "desc": "(Lnet/minecraft/item/ItemStack;ILnet/minecraft/entity/player/PlayerEntity;ILnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)V"
+            },
+            {
+                "owner": "net/minecraft/loot/functions/EnchantRandomly",
+                "name": "func_215859_a",
+                "desc": "(Lnet/minecraft/item/ItemStack;Lnet/minecraft/loot/LootContext;)Lnet/minecraft/item/ItemStack;"
+            },
+            {
+                "owner": "net/minecraft/loot/functions/EnchantRandomly",
+                "name": "func_237420_a_",
+                "desc": "(Lnet/minecraft/item/ItemStack;Lnet/minecraft/enchantment/Enchantment;Ljava/util/Random;)Lnet/minecraft/item/ItemStack;"
+            }
+        ]
+    },
     "bows": {
         "cls": "net/minecraft/item/Items",
         "name": "field_151031_f",
@@ -85,6 +122,53 @@
                 "owner": "net/minecraft/item/Item",
                 "name": "func_219970_i",
                 "desc": "(Lnet/minecraft/item/ItemStack;)Z"
+            }
+        ]
+    },
+    "enchanted_book": {
+        "cls": "net/minecraft/item/Items",
+        "name": "field_151134_bR",
+        "replacement": "net/minecraft/item/EnchantedBookItem",
+        "targets": [
+            {
+                "owner": "net/minecraft/client/gui/screen/inventory/CreativeScreen",
+                "name": "func_230457_a_",
+                "desc": "(Lcom/mojang/blaze3d/matrix/MatrixStack;Lnet/minecraft/item/ItemStack;II)V"
+            },
+            {
+                "owner": "net/minecraft/enchantment/EnchantmentHelper",
+                "name": "func_82781_a",
+                "desc": "(Lnet/minecraft/item/ItemStack;)Ljava/util/Map;"
+            },
+            {
+                "owner": "net/minecraft/enchantment/EnchantmentHelper",
+                "name": "func_82782_a",
+                "desc": "(Ljava/util/Map;Lnet/minecraft/item/ItemStack;)V"
+            },
+            {
+                "owner": "net/minecraft/inventory/container/GrindstoneContainer$2",
+                "name": "func_75214_a",
+                "desc": "(Lnet/minecraft/item/ItemStack;)Z"
+            },
+            {
+                "owner": "net/minecraft/inventory/container/GrindstoneContainer$3",
+                "name": "func_75214_a",
+                "desc": "(Lnet/minecraft/item/ItemStack;)Z"
+            },
+            {
+                "owner": "net/minecraft/inventory/container/GrindstoneContainer",
+                "name": "func_217007_a",
+                "desc": "(Lnet/minecraft/item/ItemStack;II)Lnet/minecraft/item/ItemStack;"
+            },
+            {
+                "owner": "net/minecraft/inventory/container/GrindstoneContainer",
+                "name": "func_217010_e",
+                "desc": "()V"
+            },
+            {
+                "owner": "net/minecraft/inventory/container/RepairContainer",
+                "name": "func_82848_d",
+                "desc": "()V"
             }
         ]
     },
